@@ -11,19 +11,19 @@ aprendizaje en varios aspectos del desarrollo web, incluyendo HTML, CSS, JavaScr
 ## Proyectos
 1.**Web desing Responsive**.
 
-1.1 **formulario**:
+1.1 **Formulario**:
    - Este proyecto consiste en la creación de un formulario web utilizando HTML y CSS. El formulario puede incluir campos para recopilar información como nombre, correo electrónico, mensaje, entre otros. Es una práctica común en el desarrollo web para recopilar datos de los usuarios.
 
-1.2. **homenaje**:
+1.2. **Homenaje**:
    - En este proyecto has diseñado una página web que rinde homenaje a una persona, lugar o evento. Puedes incluir información relevante sobre la persona o evento, imágenes, citas inspiradoras, y cualquier otro contenido que desees resaltar en tu homenaje.
 
-1.3. **landingPage**:
+1.3. **LandingPage**:
    - Una landing page es una página web diseñada con un propósito específico, como promocionar un producto, servicio o evento. En este proyecto has creado una landing page utilizando HTML, CSS y posiblemente JavaScript. Puede incluir un formulario de suscripción, botones de llamada a la acción, testimonios, entre otros elementos.
 
-1.4. **PaginadeDocumentacionTecnica**:
+1.4. **Pagina de Documentacion Tecnica**:
    - Este proyecto implica la creación de una página web para documentar un producto, API, biblioteca o cualquier otro recurso técnico. La página puede contener información detallada sobre el funcionamiento del producto, ejemplos de código, guías de instalación y uso, y enlaces a recursos adicionales.
 
-1.5. **portafolio**:
+1.5. **Portafolio**:
    - Un portafolio es una colección de trabajos o proyectos realizados por un individuo para mostrar sus habilidades y experiencia en un área específica. En este proyecto has creado tu propio portafolio web, que puede incluir información sobre ti, tus habilidades, proyectos destacados, enlaces a tu trabajo y formas de contacto.
 
 ## Estructura del Repositorio
