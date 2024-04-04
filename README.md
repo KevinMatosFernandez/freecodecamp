@@ -9,7 +9,8 @@ FreeCodeCamp es una plataforma en línea que ofrece cursos de programación grat
 aprendizaje en varios aspectos del desarrollo web, incluyendo HTML, CSS, JavaScript, y más.
 
 ## Proyectos
-1.**Web desing Responsive**
+1.**Web desing Responsive**.
+
 1.1 **formulario**:
    - Este proyecto consiste en la creación de un formulario web utilizando HTML y CSS. El formulario puede incluir campos para recopilar información como nombre, correo electrónico, mensaje, entre otros. Es una práctica común en el desarrollo web para recopilar datos de los usuarios.
 
