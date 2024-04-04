@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Encuesta-test</title>
+</head>
+<body>
+    <div class="contenedor">
+       <header class="titulo">
+        <h1 id="title">Encuesta de satisfacción de producto</h1>
+       </header>    
+        <p id="description"><strong>Por favor llene los espacios en blanco</strong></p>
+        <form class="formulario" id="survey-form">
+            <div class="datos-pers">
+                <label id="name-label" for="name">Nombre completo:</label>
+                <input class="data"type="text" id="name" placeholder="Escriba su nombre" required>
+                <label id="email-label" for="email">Email:</label>
+                <input class="data"type="email" id="email" placeholder="Escriba su correo" required>
+                <label id="number-label" for="number">Edad:</label>
+                <input class="data"type="number" min="10" max="120" id="number" placeholder="Escriba su edad">
+            </div>
+    
+            <div class="tiempo">
+                <p class="p-medio"><strong>Hace cuánto tiempo consume este producto</strong></p>
+                <select id="dropdown">
+                    <option>Click aquí para mostrar</option> 
+                    <option>Menos de 3 meses</option>
+                    <option>Más de 3 meses</option>
+                    <option>Recién lo probé</option>
+                    <option>Más de 3 meses</option>
+                </select>
+            </div>
+            <hr>
+            <div class="calidad">
+                <p><strong>Indique qué características describen mejor el producto</strong></p>
+                <label class="caract-like"for="muy-baja-calidad">
+                    <input class="inputbox" type="radio" value="muy-baja-calidad" id="muy-baja-calidad" name="calidad">Muy baja calidad</label>
+                
+                <label  class="caract-like"for="baja-calidad"><input class="inputbox"type="radio" value="baja-calidad" id="baja-calidad" name="calidad">Baja calidad</label>
+                
+                <label  class="caract-like"for="buena-calidad"><input  class="inputbox"type="radio" value="buena-calidad" id="buena-calidad" name="calidad">Buena calidad</label>
+                
+                <label class="caract-like"for="muy-buena-calidad"><input class="inputbox" type="radio" value="muy-buena-calidad" id="muy-buena-calidad" name="calidad">Muy buena calidad</label>
+                
+            </div>
+            <hr>
+            <div class="preferencia">
+                <p><strong>¿Qué le gusta de nuestro producto?</strong></p>
+                <label class="caract-like" for="sabor"> <input class="inputbox" type="checkbox" value="sabor" id="sabor">Sabor</label>
+               
+                <label class="caract-like"for="textura"><input class="inputbox" type="checkbox" value="textura" id="textura">Textura</label>
+                
+                <label class="caract-like"for="olor"><input  class="inputbox"type="checkbox" value="olor" id="olor">Olor</label>
+                
+                <label class="caract-like"for="servicio"><input class="inputbox" type="checkbox" value="servicio" id="servicio">Servicio</label>
+                
+                <p class="p-medio"><u><strong>*Puede elegir varios*</strong></u></p>
+            </div>
+            <hr>
+            <div class="recomendaciones">
+                <p class="p-medio"><strong>Recomendaciones</strong></p>
+                <textarea name="recomendaciones" id="recom" cols="30" rows="5" placeholder="Si tiene alguna sugerencia, recomendación o criterio, siéntase libre de escribirlo"></textarea>
+            </div>
+            
+                <input type="submit" id="submit">
+            
+    
+            
+        </form>
+
+    </div class="contenedor">
+   
+</body>
+</html>

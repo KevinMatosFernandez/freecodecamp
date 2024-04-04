@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    color:aliceblue;
+    background-color: rgb(15, 159, 182);
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+}
+  .big-container{
+    margin-top: 60px;
+    position: relative;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    min-height: 30vh;
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: solid transparent;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    margin-bottom:20px ;
+    background-color: transparent;
+    align-content: space-around;
+    opacity: 1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.ingresar{
+    margin: 10px;
+   
+}
+.titulo{
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+.label-palind{
+    font-size: 20px;
+    text-align: center;
+}
+
+.button-check{
+    width: 70px;
+    height: 30px;
+    border-radius:15px;
+    margin: auto;
+    background-color: #141442;
+    color: aliceblue;
+    border: none;
+          
+}
+.button-check:hover{
+    box-shadow: 0  4px 8px rgb(255, 252, 252);
+}
+#text-input{
+    height: 30px;
+    width: 250px;
+    border: none;
+    border-bottom: solid rgb(20, 20, 66);
+    text-align: center;
+    background-color: transparent;
+    color: aliceblue;
+    margin: 10px;
+ }
+ #text-input:hover{
+    box-shadow: 0  4px 8px rgb(20, 20, 66);
+}
+.results{
+    
+    width:200px;
+    height:20px;
+    margin-top: 10px;
+
+}
+.concepto-palindromo{
+    border-radius:20px;
+    width:450px;
+    height:130px;
+    background-color: rgb(20, 20, 66);
+    text-align: center;
+    padding: 10px;
+    box-shadow: aliceblue;
+    border: transparent;
+    justify-content:center ;
+
+}
+span{
+    color:rgb(15, 159, 182);
+    font-style: italic;
+    
+}
+@media (max-width: 390px) {
+    .concepto-palindromo{
+        width:300px;
+        height:230px;
+    }
+    .container{
+        width:300px;
+        height:230px;
+    }
+}
+@media (max-width: 430px) {
+    .concepto-palindromo{
+        width:300px;
+        height:230px;
+    }
+    .container{
+        width:300px;
+        height:230px;
+    }
+}

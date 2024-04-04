@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="esp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Resumen de Estudio de Python</title>
+</head>
+<body>
+    <h1>Resumen de estudio Python</h1>
+    <nav id="navbar">
+        <header><strong>Resumen python</strong></header>
+        <ul>
+            <li><a class="nav-link" href="#Fundamentos_de_Python:">Fundamentos de Python:</a></li>
+            <li><a class="nav-link" href="#Programación_Orientada_a_Objetos_(POO):">Programación Orientada a Objetos (POO):</a></li>
+            <li><a class="nav-link" href="#Manejo_de_Excepciones_y_Errores:">Manejo de Excepciones y Errores:</a></li>
+            <li><a class="nav-link" href="#Módulos_y_Paquetes:">Módulos y Paquetes:</a></li>
+            <li><a class="nav-link" href="#Programación_Funcional_y_Generadores:">Programación Funcional y Generadores:</a></li>
+          </ul>
+          
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Fundamentos_de_Python:">
+          <header><strong>Fundamentos de Python:</strong></header>
+          <p>Python es un lenguaje de programación versátil y de alto nivel que se ha vuelto extremadamente popular en la comunidad de desarrollo de software debido a su sintaxis simple y legible, así como a su amplia gama de aplicaciones. Los fundamentos de Python abarcan una serie de conceptos esenciales que todo programador necesita comprender para escribir código efectivo y mantenerse en la vanguardia del desarrollo de software moderno.</p>
+          <ol>
+              <li>
+                  <p>
+                      <strong>Sintaxis Básica:</strong> Python utiliza una sintaxis limpia y fácil de entender que hace que sea accesible para los principiantes y agradable para los programadores experimentados. Los elementos básicos de la sintaxis incluyen la definición de variables, la asignación de valores, el uso de operadores y la declaración de funciones.
+                  </p>
+                  <code>
+                      # Ejemplo de sintaxis básica<br>
+                      x = 5<br>
+                      y = 10<br>
+                      suma = x + y<br>
+                      print(suma)
+                  </code>
+              </li>
+              <li>
+                  <p>
+                      <strong>Tipos de Datos:</strong> Python es un lenguaje dinámicamente tipado, lo que significa que no es necesario declarar explícitamente el tipo de datos de una variable antes de usarla. Los tipos de datos básicos en Python incluyen enteros, flotantes, cadenas, booleanos y estructuras de datos como listas, tuplas, conjuntos y diccionarios.
+                  </p>
+                  <code>
+                      # Ejemplo de tipos de datos<br>
+                      entero = 10<br>
+                      flotante = 3.14<br>
+                      cadena = "Hola, mundo!"<br>
+                      booleano = True<br>
+                      lista = [1, 2, 3, 4, 5]<br>
+                      diccionario = {"clave": "valor"}
+                  </code>
+              </li>
+              <li>
+                  <p>
+                      <strong>Estructuras de Control de Flujo:</strong> Python proporciona varias estructuras de control de flujo que permiten al programador controlar el flujo de ejecución de un programa. Estas estructuras incluyen declaraciones <code>if</code>, <code>else</code> y <code>elif</code> para tomar decisiones condicionales, bucles <code>for</code> y <code>while</code> para la iteración, así como declaraciones <code>break</code> y <code>continue</code> para la manipulación del flujo de ejecución.
+                  </p>
+                  <code>
+                      # Ejemplo de estructuras de control de flujo<br>
+                      if condicion:<br>
+                          print("La condición es verdadera")<br>
+                      else:<br>
+                          print("La condición es falsa")<br>
+                          
+                      for elemento in lista:<br>
+                          print(elemento)<br>
+                          
+                      while condicion:<br>
+                          print("La condición es verdadera")<br>
+                          break
+                  </code>
+              </li>
+              <li>
+                  <p>
+                      <strong>Funciones:</strong> Las funciones en Python permiten encapsular un bloque de código para que pueda ser reutilizado en múltiples partes de un programa. Las funciones pueden aceptar argumentos de entrada, realizar operaciones en esos argumentos y devolver un resultado opcional. Python también admite funciones anónimas o lambda, que son funciones pequeñas y de una sola expresión.
+                  </p>
+                  <code>
+                      # Ejemplo de funciones<br>
+                      def saludar(nombre):<br>
+                          return "Hola, " + nombre<br><br>
+                          
+                      print(saludar("Juan"))<br><br>
+                      
+                      # Ejemplo de función lambda<br>
+                      suma = lambda x, y: x + y<br>
+                      print(suma(5, 3))
+                  </code>
+              </li>
+              <li>
+                  <p>
+                      <strong>Módulos y Paquetes:</strong> Python permite organizar el código en módulos y paquetes para facilitar la reutilización y la modularidad. Los módulos son archivos individuales que contienen código Python, mientras que los paquetes son directorios que contienen múltiples módulos relacionados. Python proporciona un amplio conjunto de módulos estándar que cubren una variedad de funcionalidades, así como la capacidad de crear y distribuir paquetes personalizados.
+                  </p>
+                  <code>
+                      # Ejemplo de importación de módulos y paquetes<br>
+                      import math<br>
+                      print(math.pi)<br>
+                      
+                      from mi_paquete import mi_modulo<br>
+                      mi_modulo.mi_funcion()<br>
+                  </code>
+              </li>
+          </ol>
+        
+          
+        </section>
+
+        <section class="main-section" id="Programación_Orientada_a_Objetos_(POO):">
+          <header><strong>Programación Orientada a Objetos (POO):</strong></header>
+          <ol>
+            <li>
+                <p><strong>Clases y Objetos:</strong></p>
+                <p>En POO, una "clase" es una plantilla que define las características comunes de un conjunto de objetos. Los objetos son instancias de una clase particular y representan entidades específicas con atributos y comportamientos definidos por la clase.</p>
+                <code>
+                    # Ejemplo de definición de clase y creación de objetos<br>
+                    class Persona:<br>
+                        def __init__(self, nombre, edad):<br>
+                            self.nombre = nombre<br>
+                            self.edad = edad<br><br>
+                            
+                        def presentarse(self):<br>
+                            print("Hola, mi nombre es", self.nombre, "y tengo", self.edad, "años.")<br><br>
+                            
+                    persona1 = Persona("Juan", 30)<br>
+                    persona1.presentarse()<br>
+                </code>
+            </li>
+            
+            <li>
+                <p><strong>Encapsulación:</strong></p>
+                <p>La encapsulación es el concepto de ocultar los detalles internos de un objeto y exponer solo las interfaces necesarias para interactuar con él. Esto se logra mediante el uso de modificadores de acceso como público, privado y protegido para controlar el acceso a los atributos y métodos de un objeto.</p>
+                <code>
+                    # Ejemplo de encapsulación<br>
+                    class MiClase:<br>
+                        def __init__(self):<br>
+                            self.__atributo_privado = 10<br><br>
+                            
+                        def get_atributo_privado(self):<br>
+                            return self.__atributo_privado<br>
+                            
+                        def set_atributo_privado(self, valor):<br>
+                            self.__atributo_privado = valor<br><br>
+                            
+                    objeto = MiClase()<br>
+                    print(objeto.get_atributo_privado())<br>
+                    objeto.set_atributo_privado(20)<br>
+                    print(objeto.get_atributo_privado())
+                </code>
+            </li>
+            
+            <li>
+                <p><strong>Herencia:</strong></p>
+                <p>La herencia es un mecanismo que permite que una clase herede los atributos y métodos de otra clase, conocida como clase base o superclase. Esto fomenta la reutilización de código y la organización jerárquica de las clases. La clase que hereda se conoce como clase derivada o subclase.</p>
+                <code>
+                    # Ejemplo de herencia<br>
+                    class Animal:<br>
+                        def hablar(self):<br>
+                            print("Hablando")<br><br>
+                            
+                    class Perro(Animal):<br>
+                        def hablar(self):<br>
+                            print("Ladrando")<br><br>
+                            
+                    perro = Perro()<br>
+                    perro.hablar()
+                </code>
+            </li>
+            
+            <li>
+                <p><strong>Polimorfismo:</strong></p>
+                <p>El polimorfismo es la capacidad de un objeto para tomar muchas formas. En POO, esto se logra mediante el uso de métodos con el mismo nombre en diferentes clases, pero con implementaciones específicas para cada clase. Esto permite que los objetos de diferentes clases respondan de manera diferente a la misma llamada de método.</p>
+                <code>
+                    # Ejemplo de polimorfismo<br>
+                    class Animal:<br>
+                        def sonido(self):<br>
+                            pass<br><br>
+                            
+                    class Perro(Animal):<br>
+                        def sonido(self):<br>
+                            print("Guau")<br><br>
+                            
+                    class Gato(Animal):<br>
+                        def sonido(self):<br>
+                            print("Miau")<br><br>
+                            
+                    def hacer_sonar(animal):<br>
+                        animal.sonido()<br><br>
+                        
+                    perro = Perro()<br>
+                    gato = Gato()<br><br>
+                    
+                    hacer_sonar(perro)<br>
+                    hacer_sonar(gato)<br>
+                </code>
+            </li>
+            
+            <li>
+                <p><strong>Abstracción:</strong></p>
+                <p>La abstracción es el proceso de identificar las características esenciales de un objeto y eliminar los detalles innecesarios. En POO, esto se logra definiendo clases con interfaces claras y métodos abstractos que describen el comportamiento general de un objeto sin preocuparse por su implementación específica.</p>
+                <code>
+                    # Ejemplo de abstracción<br>
+                    from abc import ABC, abstractmethod<br><br>
+                    
+                    class Figura(ABC):<br>
+                        @abstractmethod<br>
+                        def area(self):<br>
+                            pass<br>
+                            
+                    class Rectangulo(Figura):<br>
+                        def __init__(self, base, altura):<br>
+                            self.base = base<br>
+                            self.altura = altura<br><br>
+                            
+                        def area(self):<br>
+                            return self.base * self.altura<br><br>
+                            
+                    rectangulo = Rectangulo(5, 10)<br>
+                    print("Área del rectángulo:", rectangulo.area())<br>
+                </code>
+            </li>
+        </ol>
+        </section>
+
+        <section class="main-section" id="Manejo_de_Excepciones_y_Errores:">
+          <header><strong>Manejo de Excepciones y Errores:</strong></header>
+          <ol>
+            <li>
+                <p><strong>Concepto de Excepciones:</strong></p>
+                <p>Las excepciones son eventos que ocurren durante la ejecución de un programa y afectan el flujo normal de ejecución. Pueden ser causadas por errores de programación, condiciones inesperadas o situaciones excepcionales. En Python, las excepciones se manejan utilizando bloques try-except.</p>
+                <code>
+                    # Ejemplo de manejo de excepciones<br>
+                    try:<br>
+                        resultado = 10 / 0<br>
+                    except ZeroDivisionError:<br>
+                        print("¡Error! División por cero.")
+                </code>
+            </li>
+            
+            <li>
+                <p><strong>Bloques try-except:</strong></p>
+                <p>Los bloques try-except permiten al programador controlar el flujo de ejecución y manejar las excepciones que puedan surgir durante la ejecución del código. El bloque try contiene el código que puede lanzar una excepción, mientras que el bloque except captura y maneja la excepción si ocurre.</p>
+                <code>
+                    # Ejemplo de bloques try-except<br>
+                    try:<br>
+                        archivo = open("archivo.txt", "r")<br>
+                    except FileNotFoundError:<br>
+                        print("¡Error! Archivo no encontrado.")
+                </code>
+            </li>
+            
+            <li>
+                <p><strong>Tipos de Excepciones:</strong></p>
+                <p>Python proporciona una variedad de excepciones integradas que cubren una amplia gama de situaciones de error. Algunos ejemplos comunes de excepciones incluyen ValueError, TypeError, FileNotFoundError y ZeroDivisionError. Cada tipo de excepción está diseñado para manejar un tipo específico de error.</p>
+                <code>
+                    # Ejemplo de tipos de excepciones<br>
+                    try:<br>
+                        resultado = int("abc")<br>
+                    except ValueError:<br>
+                        print("¡Error! Valor no válido.")
+                </code>
+            </li>
+            
+            <li>
+                <p><strong>Bloque finally:</strong></p>
+                <p>El bloque finally se utiliza opcionalmente junto con los bloques try-except para ejecutar código que debe ejecutarse independientemente de si ocurre una excepción o no. Esto garantiza que ciertas acciones, como la limpieza de recursos, se realicen correctamente, incluso en caso de excepción.</p>
+                <code>
+                    # Ejemplo de bloque finally<br>
+                    try:<br>
+                        archivo = open("archivo.txt", "r")<br>
+                        contenido = archivo.read()<br>
+                    except FileNotFoundError:<br>
+                        print("¡Error! Archivo no encontrado.")<br>
+                    finally:<br>
+                        archivo.close()
+                </code>
+            </li>
+            
+            <li>
+                <p><strong>Lanzamiento de Excepciones Personalizadas:</strong></p>
+                <p>Además de manejar las excepciones integradas de Python, los programadores también pueden crear y lanzar sus propias excepciones personalizadas para indicar condiciones de error específicas en su código. Esto permite una gestión más precisa y granular de los errores y facilita la depuración y el mantenimiento del código.</p>
+                <code>
+                    # Ejemplo de excepción personalizada<br>
+                    class MiError(Exception):<br>
+                        def __init__(self, mensaje):<br>
+                            self.mensaje = mensaje<br><br>
+                            
+                    raise MiError("Este es un mensaje de error personalizado.")
+                </code>
+            </li>
+        </ol>
+        </section>
+
+        <section class="main-section" id="Módulos_y_Paquetes:">
+          <header><strong>Módulos y Paquetes:</strong></header>
+          <ol>
+            <li>
+                <p><strong>Concepto de Módulos:</strong></p>
+                <p>En Python, un módulo es un archivo que contiene código Python, incluyendo definiciones de funciones, clases y variables. Los módulos se utilizan para organizar el código en unidades lógicas y promover la reutilización y la modularidad del código.</p>
+                <code>
+                    # Ejemplo de definición de módulo<br>
+                    # archivo: mi_modulo.py<br><br>
+                    
+                    def saludar():<br>
+                        print("Hola, mundo!")<br>
+                </code>
+            </li>
+            
+            <li>
+                <p><strong>Importación de Módulos:</strong></p>
+                <p>Los módulos se importan en un programa Python utilizando la palabra clave import, seguida del nombre del módulo. Una vez importado, el código del módulo se vuelve accesible para su uso en el programa actual. También es posible importar módulos con un alias utilizando la sintaxis import module as alias.</p>
+                <code>
+                    # Ejemplo de importación de módulos<br>
+                    import mi_modulo<br>
+                    mi_modulo.saludar()<br><br>
+                    
+                    # Ejemplo de importación de módulos con alias<br>
+                    import mi_modulo as mm<br>
+                    mm.saludar()<br>
+                </code>
+            </li>
+            
+            <li>
+                <p><strong>Paquetes:</strong></p>
+                <p>Un paquete en Python es un directorio que contiene uno o más módulos relacionados. Los paquetes se utilizan para organizar módulos relacionados en una jerarquía de directorios y facilitar la importación y el uso de módulos en proyectos grandes.</p>
+                <code>
+                    # Ejemplo de paquete<br>
+                    # Estructura de directorios:<br>
+                    # mi_paquete/<br>
+                    #   __init__.py<br>
+                    #   mi_modulo.py<br><br>
+                    
+                    # En el archivo __init__.py:<br>
+                    # from .mi_modulo import saludar<br>
+                </code>
+            </li>
+            
+            <li>
+                <p><strong>Importación de Paquetes y Módulos Anidados:</strong></p>
+                <p>Los módulos y paquetes anidados se importan utilizando la notación de puntos. Por ejemplo, si hay un paquete llamado package que contiene un módulo llamado module, se puede importar como package.module. Esto permite una estructura de organización más profunda y flexible para el código.</p>
+                <code>
+                    # Ejemplo de importación de paquetes y módulos anidados<br>
+                    from mi_paquete import mi_modulo<br>
+                    mi_modulo.saludar()
+                </code>
+            </li>
+            
+            <li>
+                <p><strong>Módulos Estándar de Python:</strong></p>
+                <p>Python proporciona una amplia variedad de módulos estándar que cubren una amplia gama de funcionalidades, como operaciones matemáticas, manipulación de archivos, acceso a la red, procesamiento de datos, entre otros. Estos módulos están disponibles para su uso sin necesidad de instalación adicional y forman parte de la biblioteca estándar de Python.</p>
+                <code>
+                    # Ejemplo de uso de módulos estándar<br>
+                    import math<br>
+                    print(math.pi)<br><br>
+                    
+                    import os<br>
+                    print(os.getcwd())
+                </code>
+            </li>
+        </ol>
+        </section>
+
+        <section class="main-section" id="Programación_Funcional_y_Generadores:">
+          <header><strong>Programación Funcional y Generadores:</strong></header>
+          <ol>
+            <li>
+                <p><strong>Programación Funcional:</strong></p>
+                <p>La programación funcional es un paradigma de programación que se basa en el uso de funciones como elementos de primer orden y en el empleo de funciones puras, evitando el estado compartido, los efectos secundarios y los cambios de estado. En Python, la programación funcional se puede lograr mediante el uso de funciones lambda, funciones de orden superior y funciones de alto nivel.</p>
+                <code>
+                    # Ejemplo de programación funcional<br>
+                    def cuadrado(x):<br>
+                        return x * x<br><br>
+                        
+                    lista = [1, 2, 3, 4, 5]<br>
+                    cuadrados = map(cuadrado, lista)<br>
+                    print(list(cuadrados))
+                </code>
+            </li>
+            
+            <li>
+                <p><strong>Funciones Lambda:</strong></p>
+                <p>Las funciones lambda, también conocidas como funciones anónimas, son funciones pequeñas y de una sola expresión que se pueden definir en una línea de código. Estas funciones son útiles para expresiones simples y se utilizan comúnmente junto con funciones de orden superior como map(), filter() y reduce().</p>
+                <code>
+                    # Ejemplo de funciones lambda<br>
+                    cuadrado = lambda x: x * x<br>
+                    print(cuadrado(5))<br><br>
+                    
+                    lista = [1, 2, 3, 4, 5]<br>
+                    cuadrados = map(lambda x: x * x, lista)<br>
+                    print(list(cuadrados))
+                </code>
+            </li>
+            
+            <li>
+                <p><strong>Comprensiones de Listas:</strong></p>
+                <p>Las comprensiones de listas son una característica poderosa de Python que permite construir listas de forma concisa y elegante a partir de secuencias existentes, como listas, tuplas o rangos. Esto se logra mediante la aplicación de una expresión a cada elemento de la secuencia y la filtración de los resultados según una condición opcional.</p>
+                <code>
+                    # Ejemplo de comprensiones de listas<br>
+                    numeros = [1, 2, 3, 4, 5]<br>
+                    cuadrados = [x * x for x in numeros]<br>
+                    print(cuadrados)<br><br>
+                    
+                    pares = [x for x in numeros if x % 2 == 0]<br>
+                    print(pares)
+                </code>
+            </li>
+            
+            <li>
+                <p><strong>Generadores:</strong></p>
+                <p>Los generadores son una forma eficiente de crear secuencias de datos en Python sin la necesidad de almacenarlos todos en la memoria. En lugar de devolver una lista completa de resultados, los generadores producen un solo valor a la vez utilizando la palabra clave yield, lo que permite la generación perezosa y el procesamiento eficiente de grandes conjuntos de datos.</p>
+                <code>
+                    # Ejemplo de generadores<br>
+                    def numeros_pares(n):<br>
+                        for i in range(n):<br>
+                            if i % 2 == 0:<br>
+                                yield i<br><br>
+                                
+                    generador = numeros_pares(10)<br>
+                    for numero in generador:<br>
+                        print(numero)
+                </code>
+            </li>
+            
+            <li>
+                <p><strong>Decoradores:</strong></p>
+                <p>Los decoradores son una característica avanzada de Python que permite modificar o extender el comportamiento de una función o método existente sin modificar su implementación subyacente. Esto se logra definiendo una función decoradora que toma una función como argumento y devuelve una nueva función que envuelve o modifica el comportamiento de la función original.</p>
+                <code>
+                    # Ejemplo de decoradores<br>
+                    def decorador(funcion):<br>
+                        def wrapper():<br>
+                            print("Antes de llamar a la función")<br>
+                            funcion()<br>
+                            print("Después de llamar a la función")<br>
+                        return wrapper<br><br>
+                        
+                    @decorador<br>
+                    def saludar():<br>
+                        print("Hola, mundo!")<br><br>
+                        
+                    saludar()
+                </code>
+            </li>
+        </ol>
+        </section>
+    </main>
+</body>
+</html>

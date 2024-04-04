@@ -1,0 +1,137 @@
+*{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    
+}
+.titulo{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    
+}
+body{
+    background-image: url(https://c7.alamy.com/compes/2j4p0gy/vector-panaderia-sin-costuras-patron-repetir-fondo-con-un-conjunto-de-ilustraciones-de-corte-dulce-panaderia-galletas-marie-dulces-franceses-tradicionales-con-natillas-2j4p0gy.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    
+}
+.contenedor{
+    flex-direction: column;
+    justify-content: center;
+    margin: 3.125rem auto 0 auto; 
+    border:solid transparent;
+    border-radius: 20px;
+    background-image: -webkit-radial-gradient(chocolate, rgba(204, 112, 7, 0.543));
+    background-image: radial-gradient(chocolate, rgba(204, 112, 7, 0.543));
+    color:white;
+
+}
+form{
+    margin:20px;
+    
+    
+}
+#description{
+    margin: 10px;
+    
+    text-align: center;
+}
+.datos-pers{
+    align-content: space-around;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.caract-like input{
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: middle;
+    margin-bottom: 5px;
+}
+input,
+button,
+select{
+    height: 30px;
+    border-radius: 10px
+}
+
+input,
+button,
+select,
+textarea {
+  border-radius:10px ;
+  font-family: inherit;
+  font-size: inherit;
+  border: none;
+}
+.p-medio,
+textarea{
+    text-align: center;
+    width: 100%;
+
+}
+textarea{
+    overflow:hidden;
+}
+.tiempo,
+.calidad,
+.preferencia,
+.recomendaciones{
+    text-align: left ;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: start;
+}
+#submit{
+    text-align:center;
+    margin-top: 10px;
+    background-color: chocolate;
+    border-radius: 20px;
+    border: none;
+    color: aliceblue;
+
+}
+#submit,#dropdown{
+    width: 100%;
+    text-align: center;
+    cursor:pointer;
+}
+.inputbox{
+    cursor: pointer;
+}
+#submit:hover{
+    box-shadow: 0px 4px 8px rgba(249, 249, 249);
+}
+input:hover,
+button:hover,
+select:hover{
+    background-color: chocolate;
+    color:white;
+}
+@media (min-width: 480px) {
+    form {
+      padding: 2.5rem;
+    }
+  }
+  @media (min-width: 576px) {
+    .contenedor {
+      max-width: 540px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .contenedor {
+      max-width: 720px;
+     
+    }
+   
+  }
+  @media (max-width: 768px) {
+    textarea {
+     box-sizing: border-box;
+    }
+  }

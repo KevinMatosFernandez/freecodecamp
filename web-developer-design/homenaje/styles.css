@@ -1,0 +1,53 @@
+body{
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+    background-image: linear-gradient(to bottom, white,#75AADB, #ffd00076 , white, #75AADB);
+    margin: 0;
+}
+img{
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+ }
+  #title{
+    text-align:center;
+    color:#D4A92F;
+    border:30px solid #75AADB;
+}
+  figure{
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    
+ }
+  
+  ul{
+    max-width: 550px;
+    margin: 0 auto 50px auto;
+    text-align: left;
+    line-height: 1.6;
+    font-size: large;
+ }
+  h2{
+    text-align:center;
+    margin-top:80px;
+ }
+  #frase,h3{
+    text-align:center;
+ }
+  a:hover{
+    color:#77A9D1;
+  
+ }
+  a{
+    color:#D4A92F;
+    text-decoration:none;
+}
+ h3{
+    background-color:grey;
+ }
+  #image{
+    max-width:100%;
+ }
