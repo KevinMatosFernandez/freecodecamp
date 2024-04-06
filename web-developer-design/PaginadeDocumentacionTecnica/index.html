@@ -7,19 +7,25 @@
     <title>Resumen de Estudio de Python</title>
 </head>
 <body>
-    <h1>Resumen de estudio Python</h1>
     <nav id="navbar">
-        <header><strong>Resumen python</strong></header>
-        <ul>
-            <li><a class="nav-link" href="#Fundamentos_de_Python:">Fundamentos de Python:</a></li>
-            <li><a class="nav-link" href="#Programación_Orientada_a_Objetos_(POO):">Programación Orientada a Objetos (POO):</a></li>
-            <li><a class="nav-link" href="#Manejo_de_Excepciones_y_Errores:">Manejo de Excepciones y Errores:</a></li>
-            <li><a class="nav-link" href="#Módulos_y_Paquetes:">Módulos y Paquetes:</a></li>
-            <li><a class="nav-link" href="#Programación_Funcional_y_Generadores:">Programación Funcional y Generadores:</a></li>
-          </ul>
+        <header id="navbar-header">
+            <strong>PY DOCUMENTS</strong>
+        </header>
+        <div class="navbar-ul">
+            <ul>
+                <li><a class="nav-link" href="#Fundamentos_de_Python:">Fundamentos de Python:</a></li>
+                <li><a class="nav-link" href="#Programación_Orientada_a_Objetos_(POO):">Programación Orientada a Objetos (POO):</a></li>
+                <li><a class="nav-link" href="#Manejo_de_Excepciones_y_Errores:">Manejo de Excepciones y Errores:</a></li>
+                <li><a class="nav-link" href="#Módulos_y_Paquetes:">Módulos y Paquetes:</a></li>
+                <li><a class="nav-link" href="#Programación_Funcional_y_Generadores:">Programación Funcional y Generadores:</a></li>
+            </ul>
+        </div>
           
     </nav>
+    
+
     <main id="main-doc">
+        <h1>Resumen de estudio Python</h1>
         <section class="main-section" id="Fundamentos_de_Python:">
           <header><strong>Fundamentos de Python:</strong></header>
           <p>Python es un lenguaje de programación versátil y de alto nivel que se ha vuelto extremadamente popular en la comunidad de desarrollo de software debido a su sintaxis simple y legible, así como a su amplia gama de aplicaciones. Los fundamentos de Python abarcan una serie de conceptos esenciales que todo programador necesita comprender para escribir código efectivo y mantenerse en la vanguardia del desarrollo de software moderno.</p>
@@ -52,7 +58,8 @@
               </li>
               <li>
                   <p>
-                      <strong>Estructuras de Control de Flujo:</strong> Python proporciona varias estructuras de control de flujo que permiten al programador controlar el flujo de ejecución de un programa. Estas estructuras incluyen declaraciones <code>if</code>, <code>else</code> y <code>elif</code> para tomar decisiones condicionales, bucles <code>for</code> y <code>while</code> para la iteración, así como declaraciones <code>break</code> y <code>continue</code> para la manipulación del flujo de ejecución.
+                    <strong>Estructuras de Control de Flujo:</strong> Python proporciona varias estructuras de control de flujo que permiten al programador controlar el flujo de ejecución de un programa. Estas estructuras incluyen declaraciones <code class="code-inline">if</code>, <code class="code-inline">else</code> y <code class="code-inline">elif</code> para tomar decisiones condicionales, bucles <code class="code-inline">for</code> y <code class="code-inline">while</code> para la iteración, así como declaraciones <code class="code-inline">break</code> y <code class="code-inline">continue</code> para la manipulación del flujo de ejecución.
+
                   </p>
                   <code>
                       # Ejemplo de estructuras de control de flujo<br>
@@ -149,19 +156,19 @@
             <li>
                 <p><strong>Herencia:</strong></p>
                 <p>La herencia es un mecanismo que permite que una clase herede los atributos y métodos de otra clase, conocida como clase base o superclase. Esto fomenta la reutilización de código y la organización jerárquica de las clases. La clase que hereda se conoce como clase derivada o subclase.</p>
-                <code>
-                    # Ejemplo de herencia<br>
-                    class Animal:<br>
-                        def hablar(self):<br>
-                            print("Hablando")<br><br>
-                            
-                    class Perro(Animal):<br>
-                        def hablar(self):<br>
-                            print("Ladrando")<br><br>
-                            
-                    perro = Perro()<br>
-                    perro.hablar()
-                </code>
+                <div class="code">
+                   <code>
+                    <span class="code-line"># Ejemplo de herencia</span>
+                    <span class="code-line">class Animal:</span>
+                    <span class="code-line">def hablar(self):</span>
+                    <span class="code-line">print("Hablando")</span>
+                    <span class="code-line">class Perro(Animal):</span>
+                    <span class="code-line">def hablar(self):</span>
+                    <span class="code-line">print("Ladrando")</span>
+                    <span class="code-line">perro = Perro()</span>
+                    <span class="code-line">perro.hablar()</span>
+                   </code>
+                </div> 
             </li>
             
             <li>
