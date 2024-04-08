@@ -2,118 +2,162 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  body {
-    color:aliceblue;
-    background-color: rgb(15, 159, 182);
-    font-family: Arial, Helvetica, sans-serif;
-    min-height: 100vh;
 }
-  .big-container{
-    margin-top: 60px;
-    position: relative;
-    display: grid;
-    align-items: center;
+:root{
+    --letras:rgb(0, 0, 0);
+    --letra-button:white;
+    --fondos: rgba(255,255,255, 0.212);
+    --etiquetas:rgba(37, 3, 100, 0.993);
+}
+body {
+    color:var(--letras);
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
     justify-content: center;
+    align-items: center;
+    
+}
+body::before{ 
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/345/388/36/map-typography-colorful-world-wallpaper-preview.jpg);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    filter: blur(5px);
+}
+
+.big-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid transparent;
+    justify-content: center;
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 70%;
+    max-height: 600px;
+    max-width: 800px;
+    background-color: rgba(161, 164, 173, 0.267);
 }
 
 .container {
-    min-height: 30vh;
     position: relative;
     flex-direction: column;
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
-    border: solid transparent;
-    padding-bottom: 10px;
-    border-radius: 20px;
-    margin-bottom:20px ;
-    background-color: transparent;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    background-color: var(--fondos);
     align-content: space-around;
-    opacity: 1;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-.ingresar{
-    margin: 10px;
-   
-}
-.titulo{
-    text-align: center;
-    padding-top: 10px;
-    margin-bottom: 10px;
-}
-.label-palind{
-    font-size: 20px;
-    text-align: center;
+    width: 100%;
+    height: 100%;
 }
 
-.button-check{
-    width: 70px;
-    height: 30px;
-    border-radius:15px;
+.ingresar {
+    margin: 1rem;
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 1rem;
+
+}
+
+.titulo {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--etiquetas);
+    background-color: var(--fondos);
+    width:100%;
+    align-self: center;
+    padding: 1rem;
+    font-size: clamp(1.5rem,2vw,3rem);
+    border-radius: 1rem;
+
+}
+
+.label-palind {
+    font-size: clamp(1rem,1vw,3rem);
+    text-align: center;
+    color: var(--etiquetas);
+    font-weight: bold;
+    padding-top: 0.5rem;
+}
+
+.button-check {
+    width: 23%;
+    height: 2rem;
+    border-radius: 0.7rem;
     margin: auto;
-    background-color: #141442;
-    color: aliceblue;
+    background-color: var(--etiquetas);
+    color: var(--letra-button);
     border: none;
-          
+    transition: background-color 0.8s;
+    transition: box-shadow 0.8s;
+
 }
-.button-check:hover{
-    box-shadow: 0  4px 8px rgb(255, 252, 252);
+
+.button-check:hover {
+    box-shadow: 2px 2px 4px var(--etiquetas);
+    background-color: rgba(37, 3, 100, 0.548);
 }
-#text-input{
-    height: 30px;
-    width: 250px;
+
+#text-input {
+    height: 2rem;
+    width: 60%;
     border: none;
-    border-bottom: solid rgb(20, 20, 66);
+    border-bottom: solid 1px  var(--letras);
     text-align: center;
     background-color: transparent;
-    color: aliceblue;
-    margin: 10px;
- }
- #text-input:hover{
-    box-shadow: 0  4px 8px rgb(20, 20, 66);
-}
-.results{
-    
-    width:200px;
-    height:20px;
-    margin-top: 10px;
+    color: var(--letras);
+    border-radius:0.5rem;
+    transition: background-color 0.8s;
+    font-size: clamp(1rem,1vw,2rem);
+    font-weight: bold;
 
 }
-.concepto-palindromo{
-    border-radius:20px;
-    width:450px;
-    height:130px;
-    background-color: rgb(20, 20, 66);
+
+#text-input:hover {
+    background-color: var(--fondos);
+}
+
+.results {
+    width: 100%;
+    margin-top: 10px;
+    text-align:center;
+    color: var(--etiquetas);
+    font-weight: bold;
+    font-size: clamp(1rem,1vw,2rem);
+    height: 2rem;
+
+}
+
+.concepto-palindromo {
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    background-color: var(--fondos);
     text-align: center;
     padding: 10px;
-    box-shadow: aliceblue;
     border: transparent;
-    justify-content:center ;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    font-size: clamp(0.5rem,2vw,2rem);
+    font-weight: bold;
 
 }
-span{
-    color:rgb(15, 159, 182);
+
+span {
+    color: rgba(37, 3, 100, 0.993);
     font-style: italic;
-    
-}
-@media (max-width: 390px) {
-    .concepto-palindromo{
-        width:300px;
-        height:230px;
-    }
-    .container{
-        width:300px;
-        height:230px;
-    }
-}
-@media (max-width: 430px) {
-    .concepto-palindromo{
-        width:300px;
-        height:230px;
-    }
-    .container{
-        width:300px;
-        height:230px;
-    }
+
 }

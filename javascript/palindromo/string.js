@@ -1,30 +1,31 @@
 const entradaUsuario = document.getElementById('text-input');
-const btnver = document.getElementById('check-btn');
-const resultp = document.getElementById('resultado');
+const botonVer = document.getElementById('check-btn');
+const resultP = document.getElementById('resultado');
 
-const chequeo = function (input){
+const chequeo = function (input) {
     const inpOrig = input;
 
-    if (input === ''){
-        alert("Por favor Rellene la entrada de texto ");
+    if (input === '') {
+        alert("Please input a value");
         return;
     }
 
     const inputMayuscula = input.replace(/[^A-Za-z0-9]/gi, '').toUpperCase();
-    const inpArray = [...inputMayuscula]; // Convertir a un array
-    const inpReverse = [...inpArray].reverse(); // Invertir el array
-    const inpReverseStr = inpReverse.join(''); // Convertir el array invertido a una cadena
+    const inpArray = [...inputMayuscula];
+    const inpReverse = [...inpArray].reverse();
+    const inpReverseStr = inpReverse.join('');
 
-    if (inputMayuscula === inpReverseStr){
-        resultp.textContent = `${input} es un palíndromo`; // Usar textContent en lugar de innerText
+    if (inputMayuscula === inpReverseStr) {
+        resultP.innerHTML = `${input} is a palindrome`;
+
 
     } else {
-        resultp.textContent = `${input} no es un palíndromo`; // Usar textContent en lugar de innerText
+        resultP.textContent = `${input} is not a palindrome`;
     }
 };
 
-btnver.addEventListener('click', function() {
+botonVer.addEventListener('click', function () {
     chequeo(entradaUsuario.value);
     entradaUsuario.value = '';
-    resultp.removeAttribute("hidden");
+    resultP.removeAttribute('hidden');
 });
