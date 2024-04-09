@@ -1,0 +1,17 @@
+El objetivo es construir una aplicación que funcione de manera similar a https://roman-numeral-converter.freecodecamp.rocks, que convierte números arábigos en números romanos.
+
+Historias de usuario:
+
+1. Debes tener un elemento de entrada con un id de "number".
+2. Debes tener un elemento de botón con un id de "convert-btn".
+3. Debes tener un elemento de div con un id de "output".
+4. Cuando hagas clic en el elemento #convert-btn sin ingresar un valor en el elemento #number, el elemento #output debe contener el texto "Por favor, ingresa un número válido".
+5. Cuando el elemento #number contiene el número -1 y se hace clic en el elemento #convert-btn, el elemento #output debe contener el texto "Por favor, ingresa un número mayor o igual a 1".
+6. Cuando el elemento #number contiene el número 4000 o más y se hace clic en el elemento #convert-btn, el elemento #output debe contener el texto "Por favor, ingresa un número menor o igual a 3999".
+7. Cuando el elemento #number contiene el número 9 y se hace clic en el elemento #convert-btn, el elemento #output debe contener el texto "IX".
+8. Cuando el elemento #number contiene el número 16 y se hace clic en el elemento #convert-btn, el elemento #output debe contener el texto "XVI".
+9. Cuando el elemento #number contiene el número 649 y se hace clic en el elemento #convert-btn, el elemento #output debe contener el texto "DCXLIX".
+10. Cuando el elemento #number contiene el número 1023 y se hace clic en el elemento #convert-btn, el elemento #output debe contener el texto "MXXIII".
+11. Cuando el elemento #number contiene el número 3999 y se hace clic en el elemento #convert-btn, el elemento #output debe contener el texto "MMMCMXCIX".
+
+Completa las historias de usuario y pasa todas las pruebas para completar este proyecto. Dale tu propio estilo personal. ¡Feliz codificación!

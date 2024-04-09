@@ -1,0 +1,92 @@
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    color: rgb(214, 210, 200);
+
+}
+body::before{ 
+    position: absolute;
+    content: "";
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://st3.idealista.pt/news/arquivos/styles/fullwidth_xl/public/2023-09/media/image/1ancient-basilica-illuminated-dusk-triumph-generative-ai_1.jpg?VersionId=l5Fw8FS0EUdUibjB9HG6BYjiQlFl8TiR&itok=gQZDeLSj);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    filter: blur(5px);
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 90%;
+
+}
+main h1{
+    font-size: clamp(2rem,3vw,3rem);
+    text-align: center;
+
+}
+#form,
+.output-container,
+fieldset {
+    
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#form {
+    height: 50%;
+}
+fieldset{
+    width: 100%;
+    height: 80%;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgba(223, 193, 128, 0.363);
+    border: none;
+}
+fieldset label{
+    font-size: clamp(1rem,3vw,1.5rem);
+}
+#convert-btn
+,#number{
+    width: 80%;
+    height: 3rem;
+    text-align: center;
+    background-color: rgb(214, 210, 200);
+    border: none;
+    border-radius: 0.3rem;
+    transition: background-color 0.5s;
+    font-size: clamp(1rem,3vw,1.5rem);
+
+}
+#convert-btn:hover
+,#number:hover{
+    background-color: rgba(177, 69, 30, 0.726);
+}
+.output-container {
+    height: 15%;
+}
+
+#output{
+    font-size: clamp(2rem,3vw,3rem);
+    text-align: center;
+    background-color: rgba(223, 193, 128, 0.363);
+
+}
