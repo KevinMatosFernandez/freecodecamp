@@ -1,0 +1,152 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    background-color: rgb(17, 124, 89);
+}
+
+main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+
+main h1 {
+    width: 80%;
+    height: fit-content;
+    font-size: clamp(2rem, 3vw, 3rem);
+    text-align: center;
+    color: wheat;
+}
+
+.phone-container {
+    border: solid 8px;
+    width: 40%;
+    height: 90%;
+    min-width: 277px;
+    max-width: 300px;
+    max-height: 600px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 2rem;
+    position: relative;
+
+}
+
+.phone-container::after {
+    position: absolute;
+    content: "";
+    background-image: url(https://cdn.osxdaily.com/wp-content/uploads/2017/06/get-ios-11-default-wallpaper.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    height: 100%;
+    border-radius: 1rem;
+    filter: blur(4px);
+
+}
+
+.phone-background {
+    height: 3.5%;
+    justify-content: center;
+    display: flex;
+    align-self: center;
+    width: 50%;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    background-color: black;
+
+}
+
+.phone-camera {
+    border: solid grey;
+    border-radius: 50%;
+    height: 4%;
+
+
+}
+
+.phone-speak {
+    border: solid grey;
+    width: 10%;
+    height: 0;
+    margin-right: 5px;
+    border-radius: 5px;
+
+}
+
+.phone-footer {
+    bottom: 30%;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    bottom: 0.6rem;
+
+}
+
+.btn-styles {
+    height: 2rem;
+    width: 5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    border: none;
+    background-color: rgba(95, 65, 65, 0.301);
+
+
+}
+
+.window-div {
+    border: solid transparent;
+    color: rgb(7, 8, 8);
+    font-weight: bold;
+    margin: 25% 10%;
+    height: 100%;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    padding-top: 0;
+    position: relative;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 2px 2px 4px;
+    background-color: rgba(105, 106, 107, 0.425);
+}
+
+.input-div {
+    height: fit-content;
+    text-align: center;
+    padding: 1rem 0.5rem;
+    border-radius: 1.5rem;
+    position: absolute;
+    top: 1rem;
+    width: 80%;
+    background-color: rgba(211, 204, 204, 0.247);
+}
+
+
+
+input {
+    height: 1.5rem;
+    margin-top: 0.5rem;
+    width: 90%;
+    background-color: transparent;
+    border-radius: 1rem;
+    border: solid 1px;
+    font-weight: bold;
+}

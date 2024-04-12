@@ -1,0 +1,41 @@
+Aquí están las historias de usuario traducidas al español:
+
+1. Debes tener un elemento de entrada con un id de "user-input".
+2. Debes tener un elemento de botón con un id de "check-btn".
+3. Debes tener un elemento de botón con un id de "clear-btn".
+4. Debes tener un elemento div con un id de "results-div".
+5. Cuando hagas clic en el elemento #check-btn sin ingresar un valor en el elemento #user-input, debería aparecer una alerta con el texto "Por favor, proporciona un número de teléfono".
+6. Cuando hagas clic en el elemento #clear-btn, el contenido dentro del elemento #results-div debería ser eliminado.
+7. Cuando el elemento #user-input contiene 1 555-555-5555 y se hace clic en el elemento #check-btn, el elemento #results-div debería contener el texto "Número de teléfono válido: 1 555-555-5555".
+8. Cuando el elemento #user-input contiene 1 (555) 555-5555 y se hace clic en el elemento #check-btn, el elemento #results-div debería contener el texto "Número de teléfono válido: 1 (555) 555-5555".
+9. Cuando el elemento #user-input contiene 5555555555 y se hace clic en el elemento #check-btn, el elemento #results-div debería contener el texto "Número de teléfono válido: 5555555555".
+10. Cuando el elemento #user-input contiene 555-555-5555 y se hace clic en el elemento #check-btn, el elemento #results-div debería contener el texto "Número de teléfono válido: 555-555-5555".
+11. Cuando el elemento #user-input contiene (555)555-5555 y se hace clic en el elemento #check-btn, el elemento #results-div debería contener el texto "Número de teléfono válido: (555)555-5555".
+12. Cuando el elemento #user-input contiene 1(555)555-5555 y se hace clic en el elemento #check-btn, el elemento #results-div debería contener el texto "Número de teléfono válido: 1(555)555-5555".
+13. Cuando el elemento #user-input contiene 555-5555 y se hace clic en el elemento #check-btn, el elemento #results-div debería contener el texto "Número de teléfono no válido: 555-5555".
+14. Cuando el elemento #user-input contiene 5555555 y se hace clic en el elemento #check-btn, el elemento #results-div debería contener el texto "Número de teléfono no válido: 5555555".
+15. Cuando el elemento #user-input contiene 1 555)555-5555 y se hace clic en el elemento #check-btn, el elemento #results-div debería contener el texto "Número de teléfono no válido: 1 555)555-5555".
+16. Cuando el elemento #user-input contiene 1 555 555 5555 y se hace clic en el elemento #check-btn, el elemento #results-div debería contener el texto "Número de teléfono válido: 1 555 555 5555".
+17. Cuando el elemento #user-input contiene 1 456 789 4444 y se hace clic en el elemento #check-btn, el elemento #results-div debería contener el texto "Número de teléfono válido: 1 456 789 4444".
+18. Cuando #user-input contiene 123**&!!asdf# y #check-btn se hace clic, #results-div debería contener el texto "Número de teléfono no válido: 123**&!!asdf#".
+19. Cuando el elemento #user-input contiene 55555555 y se hace clic en el elemento #check-btn, el elemento #results-div debería contener el texto "Número de teléfono no válido: 55555555".
+20. Cuando el elemento #user-input contiene (6054756961) y se hace clic en el elemento #check-btn, el elemento #results-div debería contener el texto "Número de teléfono no válido: (6054756961)".
+21. Cuando el elemento #user-input contiene 2 (757) 622-7382 y se hace clic en el elemento #check-btn, el elemento #results-div debería contener el texto "Número de teléfono no válido: 2 (757) 622-7382".
+22. Cuando el elemento #user-input contiene 0 (757) 622-7382 y se hace clic en el elemento #check-btn, el elemento #results-div debería contener el texto "Número de teléfono no válido: 0 (757) 622-7382".
+23. Cuando el elemento #user-input contiene -1 (757) 622-7382 y se hace clic en el elemento #check-btn, el elemento #results-div debería contener el texto "Número de teléfono no válido: -1 (757) 622-7382".
+24. Cuando el elemento #user-input contiene 2 757 622-7382 y se hace clic en el elemento #check-btn, el elemento #results-div debería contener el texto "Número de teléfono no válido: 2 757 622-7382".
+25. Cuando el elemento #user-input contiene 10 (757) 622
+
+-7382 y se hace clic en el elemento #check-btn, el elemento #results-div debería contener el texto "Número de teléfono no válido: 10 (757) 622-7382".
+26. Cuando el elemento #user-input contiene 27576227382 y se hace clic en el elemento #check-btn, el elemento #results-div debería contener el texto "Número de teléfono no válido: 27576227382".
+27. Cuando el elemento #user-input contiene (275)76227382 y se hace clic en el elemento #check-btn, el elemento #results-div debería contener el texto "Número de teléfono no válido: (275)76227382".
+28. Cuando el elemento #user-input contiene 2(757)6227382 y se hace clic en el elemento #check-btn, el elemento #results-div debería contener el texto "Número de teléfono no válido: 2(757)6227382".
+29. Cuando el elemento #user-input contiene 2(757)622-7382 y se hace clic en el elemento #check-btn, el elemento #results-div debería contener el texto "Número de teléfono no válido: 2(757)622-7382".
+30. Cuando el elemento #user-input contiene 555)-555-5555 y se hace clic en el elemento #check-btn, el elemento #results-div debería contener el texto "Número de teléfono no válido: 555)-555-5555".
+31. Cuando el elemento #user-input contiene (555-555-5555 y se hace clic en el elemento #check-btn, el elemento #results-div debería contener el texto "Número de teléfono no válido: (555-555-5555".
+32. Cuando #user-input contiene (555)5(55?)-5555 y #check-btn se hace clic, #results-div debería contener el texto "Número de teléfono no válido: (555)5(55?)-5555".
+33. Cuando el elemento #user-input contiene 55 55-55-555-5 y se hace clic en el elemento #check-btn, el elemento #results-div debería contener el texto "Número de teléfono no válido: 55 55-55-555-5".
+34. Cuando el elemento #user-input contiene 11 555-555-5555 y se hace clic en el elemento #check-btn, el elemento #results-div debería contener el texto "Número de teléfono no válido: 11 555-555-5555".+
+   
+   
+   
